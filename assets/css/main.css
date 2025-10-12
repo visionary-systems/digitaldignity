@@ -1,0 +1,115 @@
+/**
+ * Digital Dignity - Master Stylesheet
+ * Next-generation design with glassmorphism and holographic effects
+ */
+
+/* Import utilities first */
+@import url('utilities.css');
+
+/* Import modules */
+@import url('modules/navigation.css');
+@import url('modules/hero-1.css');
+@import url('modules/hero-2.css');
+@import url('modules/hero-3.css');
+@import url('modules/header-1.css');
+@import url('modules/header-2.css');
+@import url('modules/content-1.css');
+@import url('modules/content-2.css');
+@import url('modules/content-3.css');
+@import url('modules/footer-1.css');
+@import url('modules/footer-2.css');
+
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+
+:root {
+  /* Color palette - holographic/cyberpunk theme */
+  --color-primary: #00f0ff;
+  --color-secondary: #ff00ff;
+  --color-accent: #00ff88;
+  --color-bg-dark: #0a0a0f;
+  --color-bg-darker: #050508;
+  --color-text: #ffffff;
+  --color-text-muted: #a0a0b0;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  
+  /* Typography */
+  --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Orbitron', sans-serif;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.6s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  background: var(--color-bg-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-sm);
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }
+
+p {
+  margin-bottom: var(--spacing-sm);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+/* ============================================
+   LAYOUT
+   ============================================ */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* ============================================
+   UTILITY CLASSES (see utilities.css)
+   ============================================ */

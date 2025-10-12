@@ -1,0 +1,30 @@
+/**
+ * hero-3 Module Styles
+ * All styles namespaced under .hero-3
+ */
+
+.hero-3 {
+  /* Container styles */
+  padding: var(--spacing-lg) 0;
+}
+
+.hero-3__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.hero-3__title {
+  /* Title styles */
+}
+
+/* Add more module-specific styles here */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero-3 {
+    padding: var(--spacing-md) 0;
+  }
+}
+
+/* TEMPLATE: Replace with actual design */

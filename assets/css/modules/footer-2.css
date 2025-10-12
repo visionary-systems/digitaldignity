@@ -1,0 +1,30 @@
+/**
+ * footer-2 Module Styles
+ * All styles namespaced under .footer-2
+ */
+
+.footer-2 {
+  /* Container styles */
+  padding: var(--spacing-lg) 0;
+}
+
+.footer-2__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.footer-2__title {
+  /* Title styles */
+}
+
+/* Add more module-specific styles here */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-2 {
+    padding: var(--spacing-md) 0;
+  }
+}
+
+/* TEMPLATE: Replace with actual design */

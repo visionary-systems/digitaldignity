@@ -1,0 +1,30 @@
+/**
+ * navigation Module Styles
+ * All styles namespaced under .navigation
+ */
+
+.navigation {
+  /* Container styles */
+  padding: var(--spacing-lg) 0;
+}
+
+.navigation__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.navigation__title {
+  /* Title styles */
+}
+
+/* Add more module-specific styles here */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navigation {
+    padding: var(--spacing-md) 0;
+  }
+}
+
+/* TEMPLATE: Replace with actual design */

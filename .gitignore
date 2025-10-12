@@ -1,0 +1,28 @@
+# Environment
+.env
+.env.local
+.env.production
+
+# System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+error_log
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# Dependencies (if you add them later)
+/vendor/
+/node_modules/

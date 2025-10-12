@@ -1,0 +1,30 @@
+/**
+ * content-3 Module Styles
+ * All styles namespaced under .content-3
+ */
+
+.content-3 {
+  /* Container styles */
+  padding: var(--spacing-lg) 0;
+}
+
+.content-3__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.content-3__title {
+  /* Title styles */
+}
+
+/* Add more module-specific styles here */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .content-3 {
+    padding: var(--spacing-md) 0;
+  }
+}
+
+/* TEMPLATE: Replace with actual design */

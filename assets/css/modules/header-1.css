@@ -1,0 +1,30 @@
+/**
+ * header-1 Module Styles
+ * All styles namespaced under .header-1
+ */
+
+.header-1 {
+  /* Container styles */
+  padding: var(--spacing-lg) 0;
+}
+
+.header-1__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.header-1__title {
+  /* Title styles */
+}
+
+/* Add more module-specific styles here */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header-1 {
+    padding: var(--spacing-md) 0;
+  }
+}
+
+/* TEMPLATE: Replace with actual design */
