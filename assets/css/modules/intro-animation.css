@@ -1,0 +1,198 @@
+/**
+ * Intro Animation Module Styles
+ * Full-screen intro animation with SVG logo and fade-out effect
+ */
+
+/* Import Google Fonts for company name */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* Main container - full screen overlay */
+.intro-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.8s ease-out;
+}
+
+/* Fade out state - triggered by JS */
+.intro-animation.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Brand container - logo + name */
+.intro-animation__brand-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  animation: intro-fadeInScene 0.5s ease-in forwards;
+}
+
+/* Logo container */
+.intro-animation__logo-container {
+  width: 200px;
+  height: auto;
+  position: relative;
+}
+
+.intro-animation__logo-container svg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3));
+}
+
+/* Company name styling */
+.intro-animation__company-name {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  opacity: 0;
+  animation: intro-fadeInName 0.8s ease-out 2s forwards;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.intro-animation__company-name-tight {
+  letter-spacing: -0.05em;
+}
+
+/* Background pulse effect */
+.intro-animation::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: intro-pulse 2s ease-in-out 2.5s infinite;
+}
+
+/* ============================================
+   SVG ANIMATIONS
+   ============================================ */
+
+/* Animate the i-dot - drops in from above */
+#i-dot {
+  animation: intro-dropIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  opacity: 0;
+  transform-origin: center;
+}
+
+/* Animate the i-stem - slides up from below */
+#i-stem {
+  animation: intro-slideUp 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s forwards;
+  opacity: 0;
+  transform-origin: bottom;
+}
+
+/* Animate the D - sweeps in from right */
+#d-curve {
+  animation: intro-sweepIn 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.8s forwards;
+  opacity: 0;
+  transform-origin: left center;
+}
+
+/* ============================================
+   KEYFRAME ANIMATIONS
+   ============================================ */
+
+@keyframes intro-dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px) scale(0);
+  }
+  60% {
+    transform: translateY(10px) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes intro-slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px) scaleY(0);
+  }
+  60% {
+    transform: translateY(-5px) scaleY(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+@keyframes intro-sweepIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100px) scaleX(0);
+  }
+  60% {
+    transform: translateX(-5px) scaleX(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scaleX(1);
+  }
+}
+
+@keyframes intro-fadeInName {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes intro-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+@keyframes intro-fadeInScene {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+  .intro-animation__logo-container {
+    width: 150px;
+  }
+  
+  .intro-animation__company-name {
+    font-size: 32px;
+  }
+  
+  .intro-animation__brand-container {
+    gap: 30px;
+  }
+}

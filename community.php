@@ -37,9 +37,15 @@ $modules = [
     }
     ?>
     
-    <script src="/assets/js/main.js"></script>
-    <?php if(file_exists("assets/js/pages/{$pageClass}.js")): ?>
-        <script src="/assets/js/pages/<?php echo $pageClass; ?>.js"></script>
-    <?php endif; ?>
+   <!-- Module JavaScript files -->
+  <script src="/assets/js/modules/intro-animation.js"></script>
+  <script src="/assets/js/modules/navigation.js"></script>
+  
+  <!-- Main JavaScript -->
+  <script src="/assets/js/main.js"></script>
+  
+  <?php if(file_exists("assets/js/pages/{$pageClass}.js")): ?>
+    <script src="/assets/js/pages/<?php echo $pageClass; ?>.js"></script>
+  <?php endif; ?>
 </body>
 </html>

@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Initialize modules
   if (typeof NavigationModule !== 'undefined') NavigationModule.init();
+  if (typeof IntroAnimationModule !== 'undefined') IntroAnimationModule.init();
   if (typeof Hero1Module !== 'undefined') Hero1Module.init();
   
   // Add more module initializations as needed

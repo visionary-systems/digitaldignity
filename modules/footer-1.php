@@ -1,13 +1,29 @@
 <?php
 /**
- * Footer Module 1 - Primary footer
+ * Footer Module 1 - Primary footer with 3-column layout
  */
 ?>
-<section class="footer-1" data-module="footer-1">
-    <div class="footer-1__container">
-        <h2 class="footer-1__title">Module: footer-1</h2>
-        <p class="footer-1__description">Footer Module 1 - Primary footer</p>
+<footer class="footer-1" data-module="footer-1">
+<div class="footer-1">
+  <div class="footer-1__container">
+    <div class="footer-1__columns">
+      
+      <!-- Column 1: Logo + Links -->
+      <div class="footer-1__column">
+        <?php include 'modules/footer-column-1.php'; ?>
+      </div>
+      
+      <!-- Column 2: Slideshow -->
+      <div class="footer-1__column">
+        <?php include 'modules/footer-column-2.php'; ?>
+      </div>
+      
+      <!-- Column 3: Poll (NEW) -->
+      <div class="footer-1__column">
+        <?php include 'modules/footer-column-3.php'; ?>
+      </div>
+      
     </div>
-</section>
-
-<!-- TEMPLATE: Replace with actual design -->
+  </div>
+</div>
+</footer>

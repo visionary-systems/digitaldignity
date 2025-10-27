@@ -5,26 +5,60 @@
 
 .footer-1 {
   /* Container styles */
-  padding: var(--spacing-lg) 0;
+  background-color: #231f20;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  padding: 20px var(--spacing-lg) 80px;
+  width: 100%;
 }
 
 .footer-1__container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-md);
+  width: 100%;
 }
 
-.footer-1__title {
-  /* Title styles */
+.footer-1__columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  width: 100%;
 }
 
-/* Add more module-specific styles here */
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .footer-1 {
-    padding: var(--spacing-md) 0;
+/* Tablet breakpoint */
+@media (max-width: 992px) {
+  .footer-1__columns {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
   }
 }
 
-/* TEMPLATE: Replace with actual design */
+/* Mobile breakpoint - stack columns */
+@media (max-width: 768px) {
+  .footer-1 {
+    min-height: auto;
+    padding: var(--spacing-md) 0;
+  }
+  
+  .footer-1__columns {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .footer-1__container {
+    padding: 0 var(--spacing-sm);
+  }
+}
+
+/* Small mobile optimization */
+@media (max-width: 480px) {
+  .footer-1 {
+    padding: var(--spacing-sm) 0;
+  }
+  
+  .footer-1__columns {
+    gap: var(--spacing-sm);
+  }
+}

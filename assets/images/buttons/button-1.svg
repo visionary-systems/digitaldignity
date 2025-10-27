@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 522.22 56.58">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        font-family: ArticulatCF-DemiBold, 'Articulat CF';
+        font-weight: 300;
+      }
+
+      .cls-1, .cls-6 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-7 {
+        fill: #f15b29;
+      }
+
+      .cls-4 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-8 {
+        fill: #fff;
+        font-size: 20px;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9, .cls-10, .cls-11, .cls-12, .cls-6, .cls-13, .cls-14 {
+        font-family: ArticulatCF-ExtraBold, 'Articulat CF';
+        font-weight: 700;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <rect class="cls-7" x="0" y="0" width="522.22" height="56.58" rx="25.74" ry="25.74"/>
+    <text class="cls-8" transform="translate(22.14 34.16)"><tspan class="cls-2" x="0" y="0">READ A</tspan><tspan class="cls-5" x="70.66" y="0">B</tspan><tspan class="cls-2" x="83.14" y="0">OUT </tspan><tspan class="cls-4" x="127.84" y="0">D</tspan><tspan class="cls-3" x="140.6" y="0">AT</tspan><tspan class="cls-2" x="162.88" y="0">A </tspan><tspan class="cls-1" x="181.86" y="0">A</tspan><tspan class="cls-2" x="195.84" y="0">S </tspan><tspan class="cls-13" x="213.26" y="0">U</tspan><tspan class="cls-10" x="227.02" y="0">N</tspan><tspan class="cls-14" x="241.2" y="0">IVE</tspan><tspan class="cls-12" x="273.18" y="0">R</tspan><tspan class="cls-11" x="285.82" y="0">S</tspan><tspan class="cls-13" x="298.36" y="0">AL </tspan><tspan class="cls-6" x="329.02" y="0">BA</tspan><tspan class="cls-13" x="356.1" y="0">SIC </tspan><tspan class="cls-9" x="393.24" y="0">I</tspan><tspan class="cls-13" x="398.72" y="0">NCO</tspan><tspan class="cls-10" x="441.68" y="0">M</tspan><tspan class="cls-13" x="458.86" y="0">E</tspan></text>
+  </g>
+</svg>

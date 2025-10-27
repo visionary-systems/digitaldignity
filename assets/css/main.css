@@ -8,6 +8,8 @@
 
 /* Import modules */
 @import url('modules/navigation.css');
+@import url('modules/intro-animation.css');
+@import url('modules/intro-module.css');
 @import url('modules/hero-1.css');
 @import url('modules/hero-2.css');
 @import url('modules/hero-3.css');
@@ -17,7 +19,11 @@
 @import url('modules/content-2.css');
 @import url('modules/content-3.css');
 @import url('modules/footer-1.css');
+@import url('modules/footer-column-1.css');
+@import url('modules/footer-column-2.css');
+@import url('modules/footer-column-3.css');
 @import url('modules/footer-2.css');
+@import url('modules/footer-column-3.css');
 
 /* ============================================
    GLOBAL STYLES
